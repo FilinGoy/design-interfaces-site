@@ -1,0 +1,89 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+.btn-cst-white {
+  font-size: 14px;
+  color: #4caf4f;
+  padding: 0.75rem 2rem !important;
+}
+.btn-cst-primary {
+  font-size: 14px;
+  background-color: #4caf4f;
+  color: white;
+  padding: 0.75rem 2rem !important;
+}
+.text-cst-dgrey {
+  color: #4d4d4d;
+}
+.text-cst-grey {
+  color: #717171;
+}
+.text-cst-primary {
+  color: #4caf4f;
+}
+.text-cst-silver {
+  color: #f5f7fa;
+}
+.text-cst-fs-min {
+  font-size: 14px;
+}
+.bg-cst-grey-gradient {
+  background: linear-gradient(white, #f5f7fa);
+}
+.bg-cst-grey {
+  background-color: #f5f7fa;
+}
+.bg-cst-dgrey {
+  background-color: #4d4d4d;
+}
+.bg-cst-black {
+  background-color: #263238;
+}
+.carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  background-color: #4caf4f;
+  border-radius: 50%;
+}
+.carousel-control-next span {
+  margin-right: -100%;
+}
+.carousel-control-prev span {
+  margin-left: -100%;
+}
+.card-cst {
+  box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+}
+.card-cst-2 {
+  box-shadow: 0px 8px 16px 0px #abbed166;
+}
+a.link-cst-primary {
+  color: #4caf4f;
+}
+a.link-cst-primary :hover {
+  color: rgba(76, 175, 79, 0.9);
+}
+.input-cst-grey input::placeholder {
+  color: #d9dbe1;
+  font-weight: 300;
+  font-size: 14px;
+}
+.input-cst-grey input[type="email"] {
+  border: none;
+  background-color: #717171;
+  padding: 0.5rem 0.75rem;
+  color: #d9dbe1;
+}
+.input-cst-grey input[type="email"]:focus,
+.input-cst-grey input[type="email"]:hover {
+  box-shadow: 0 0 0 0.25rem rgba(217, 219, 225, 0.25);
+}
+.input-cst-grey .cst-input-prepend {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  padding: 0.6rem 0.75rem 0.6rem 0.5rem;
+  transform: translateY(-50%);
+  color: white;
+}

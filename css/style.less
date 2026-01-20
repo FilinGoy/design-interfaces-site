@@ -1,0 +1,135 @@
+@neutral-black: #263238;
+@neutral-dgrey: #4d4d4d;
+@neutral-grey: #717171;
+@neutral-lgrey: #89939e;
+@neutral-grey-blue: #abbed1;
+@neutral-silver: #f5f7fa;
+@neutral-white: #ffffff;
+@neutral-gray-300: #d9dbe1;
+
+@primary: #4caf4f;
+@primary-shade-1: #43a046;
+@primary-shade-2: #388e3b;
+@primary-shade-3: #237d31;
+@primary-shade-4: #1b5e1f;
+@primary-shade-5: #103e13;
+
+@secondary: #263238;
+@info: #2194f3;
+@success: #2e7d31;
+@error: #e53835;
+@warning: #fbc02d;
+
+@primary-tint-1: #66bb69;
+@primary-tint-2: #81c784;
+@primary-tint-3: #a5d6a7;
+@primary-tint-4: #c8e6c9;
+@primary-tint-5: #e8f5e9;
+
+* {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+}
+
+.btn-cst {
+	&-white {
+		font-size: 14px;
+		color: @primary;
+		padding: 0.75rem 2rem !important;
+	}
+	&-primary {
+		font-size: 14px;
+		background-color: @primary;
+		color: white;
+		padding: 0.75rem 2rem !important;
+	}
+}
+
+.text-cst {
+	&-dgrey {
+		color: @neutral-dgrey;
+	}
+	&-grey {
+		color: @neutral-grey;
+	}
+	&-primary {
+		color: @primary;
+	}
+	&-silver {
+		color: @neutral-silver;
+	}
+	&-fs-min {
+		font-size: 14px;
+	}
+}
+
+.bg-cst {
+	&-grey-gradient {
+		background: linear-gradient(white, @neutral-silver);
+	}
+	&-grey {
+		background-color: @neutral-silver;
+	}
+	&-dgrey {
+		background-color: @neutral-dgrey;
+	}
+	&-black {
+		background-color: @neutral-black;
+	}
+}
+
+.carousel-indicators [data-bs-target] {
+	width: 8px;
+	height: 8px;
+	background-color: @primary;
+	border-radius: 50%;
+}
+
+.carousel-control {
+	&-next span {
+		margin-right: -100%;
+	}
+	&-prev span {
+		margin-left: -100%;
+	}
+}
+
+.card-cst {
+	box-shadow: 0px 2px 4px 0px rgba(@neutral-grey-blue, 0.2);
+	&-2 {
+		box-shadow: 0px 8px 16px 0px #abbed166;
+	}
+}
+
+a.link-cst-primary {
+	color: @primary;
+	:hover {
+		color: rgba(@primary, 0.9);
+	}
+}
+
+.input-cst-grey {
+	input::placeholder {
+		color: @neutral-gray-300;
+		font-weight: 300;
+		font-size: 14px;
+	}
+	input[type="email"] {
+		border: none;
+		background-color: @neutral-grey;
+		padding: 0.5rem 0.75rem;
+		color: @neutral-gray-300;
+		&:focus,
+		&:hover {
+			box-shadow: 0 0 0 0.25rem rgba(@neutral-gray-300, 0.25);
+		}
+	}
+	.cst-input-prepend {
+		position: absolute;
+		right: 6px;
+		top: 50%;
+		padding: 0.6rem 0.75rem 0.6rem 0.5rem;
+		transform: translateY(-50%);
+		color: white;
+	}
+}
